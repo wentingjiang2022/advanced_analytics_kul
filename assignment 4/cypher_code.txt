@@ -1,0 +1,140 @@
+/*
+//Top 10 played games
+MATCH (g:game)-[p:plays]-(s:streamer)
+RETURN g.name as Game, count(s) as Play ORDER by Play DESC limit 10
+*/
+
+/*
+//Top 10 streamer
+MATCH (s:streamer)
+WHERE not(s.followers) = 'null'
+RETURN s.name as Streamer, toInteger(s.followers) as Followers ORDER by Followers DESC limit 10
+*/
+
+/*
+//Top 10 Dota 2 streamer
+MATCH (t:tag)-[e2]-(s:streamer)-[e]-(dota:game {name:"Dota 2"})
+//MATCH (t:tag)-[e2]-(s:streamer)-[e]-(dota:game {name:"League of Legends"})
+WHERE not(s.followers) = 'null'
+/*
+RETURN s.name as Streamer, toInteger(s.views_max) as Max_views, 
+toInteger(s.followers) as Followers,
+toInteger(s.views_avg) as Avg_views ORDER by Followers DESC limit 10
+RETURN t.name as Tag limit 100
+*/
+
+//MATCH path = (lol:game{name:"Dota 2"})-[e1]-(s:streamer)-[e2]-(dota:game{name:"League of Legends"})
+//RETURN *
+
+//Top 10 tag
+//MATCH (s:streamer)-[e]-(t:tag)
+//WHERE not(s.followers) = 'null'
+//RETURN t.name as Tag, count(s) as Streamer ORDER by Streamer DESC limit 10
+//RETURN t limit 10
+
+/*
+//Top 10 Dota 2 streamer
+//MATCH (lol:game {name:"League of Legends"})-[e1]-(s:streamer)-[e]-(dota:game {name:"Dota 2"})
+MATCH (s:streamer)-[e]-(lol:game {name:"Dota 2"})
+WHERE not(s.followers) = 'null'
+WITH DISTINCT s //WHERE count(g) = 1
+MATCH (s)-[e3]-(g:game)
+RETURN s.name as Streamer, 
+toInteger(s.followers) as Followers,
+toInteger(s.views_min) as Min_views, 
+toInteger(s.views_max) as Max_views, 
+toInteger(s.views_avg) as Avg_views,
+count(g)-1 as Other_games
+ORDER by Other_games ASC, Followers DESC
+*/
+
+/*
+//Top 10 Dota 2 only streamer
+//MATCH (s:streamer)-[e]-(dota:game {name:"Dota 2"})
+MATCH (g:game)-[e2]-(s:streamer)-[e]-(lol:game {name:"League of Legends"})
+WHERE not(s.followers) = 'null' 
+WITH DISTINCT s //AND count(g) = 1
+//MATCH (s)-[e2]-(sq:squad)
+MATCH (s)-[e3]-(g:game)
+RETURN s.name as Streamer, 
+  toInteger(s.followers) as Followers,
+  toInteger(s.views_min) as Min_views, 
+  toInteger(s.views_max) as Max_views, 
+  toInteger(s.views_avg) as Avg_views,
+//  count(sq) as Squads,
+  count(g)-1 as Other_games
+ORDER by Other_games ASC, Followers DESC limit 70
+*/
+
+
+
+/*
+//MATCH (s:streamer)-[e]-(dota:game {name:"Dota 2"})
+MATCH (t:tag)-[e1]-(s:streamer)-[e]-(lol:game {name:"League of Legends"})
+WHERE not(s.followers) = 'null' 
+WITH DISTINCT s //AND count(g) = 1
+RETURN s.name as Streamer, 
+  toInteger(s.followers) as Followers,
+  s.description as Description
+ORDER by Followers DESC limit 5000
+*/
+
+//with DISTINCT t
+//MATCH (t:tag)-[e1]-(s:streamer)
+//RETURN t.name as Tag,
+//  count(s) as Streamers
+//ORDER by Streamers DESC
+
+/*
+MATCH (lol:game {name:"League of Legends"})-[e1]-(s:streamer)-[e]-(dota:game {name:"Dota 2"})
+WITH DISTINCT s
+MATCH (s)-[e3]-(g:game)
+RETURN s.name as Streamer, 
+  toInteger(s.followers) as Followers,
+  toInteger(s.views_min) as Min_views, 
+  toInteger(s.views_max) as Max_views, 
+  toInteger(s.views_avg) as Avg_views,
+  count(g)-1 as Other_games
+ORDER BY Followers DESC
+*/
+
+//MATCH (lol:game {name:"Dota 2"})-[e1]-(s1:streamer)-[:recommends]->(s2:streamer)-[e2]-(dota:game {name:"League of Legends"})
+//RETURN s1, count(*)
+//89/1388 (lol->dota) 
+//1227/1388 (lol->lol)
+//351/411 (dota->dota)
+//38/411 (dota->lol)
+
+//MATCH(s:streamer)-[e]-(:game {name:"Dota 2"})
+//WHERE s.description = ""
+
+//MATCH (s:streamer)-[e]-(t:tag)//-[e2]-(s:stremer)
+//MATCH path = (s:streamer)-[e]-(sq:squad)
+
+//WHERE contains(s.followers,'')
+//MATCH (s)-[e2]-(g:game {name:'League of Legends'})
+//WHERE s.followers = 'null'
+//WHERE s.name = 'nightblue3' OR s.name = 'yoda' OR s.name = 'imaqtpie'
+
+/*
+//Banned streamer tags
+MATCH (s)-[e2]-(g:game {name:'Dota 2'})
+//MATCH (s)-[e2]-(g:game {name:'League of Legends'})
+MATCH path = (s)-[e3]-(t:tag)
+RETURN path
+//RETURN s.name as Streamer, t.name as Tag, s.followers as Followers
+ORDER by s.followers DESC limit 89
+// 137 Lol, 89 Dota
+*/
+
+//Banned streamer tags
+MATCH (s)-[e2]-(g:game {name:'Dota 2'})
+//MATCH (s)-[e2]-(g:game {name:'League of Legends'})
+//MATCH path = (s)-[e3]-(t:tag)
+MATCH path = (s)-[e3]-(sq:squad)
+//RETURN path
+RETURN s.name as Streamer, t.name as Tag, s.followers as Followers
+ORDER by s.followers DESC limit 89
+// 137 Lol, 89 Dota
+
+
