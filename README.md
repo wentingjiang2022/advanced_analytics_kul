@@ -11,7 +11,7 @@ This repository contains the lab report by Group 7, summarizing the results of t
 
 ## 1️⃣ Predictive Modeling for Airbnb Properties
 
-The dataset is downloadable from [here](http://seppe.net/aa/assignment1/data.zip)
+The dataset is downloadable from [here](http://seppe.net/aa/assignment1/data.zip).
 The leaderboard that presents our ranking is to be found [here](http://seppe.net/aa/assignment1/)
 
 In this assignment, we develop a predictive model to estimate the "price per night" of Airbnb properties in Belgium. The notebooks present our process including exploratory data analysis, feature transformation, feature engineering and model evalation.
