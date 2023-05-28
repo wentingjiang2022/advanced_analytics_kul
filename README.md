@@ -42,7 +42,7 @@ chmod +x ./letsgo-mac.sh
 ```
 Assignment 3 outlines the findings of the third assignment, which focused on real-time sentiment analysis of reviews from the Steam website. The chapter covers the data collection process, sentiment analysis, and results.
 
-##### File structure
+#### File structure
 
 `merge_export_csvfile.ipynb`: To combine the text files from subdirectories and construct a dataset in CSV format
 
