@@ -11,7 +11,7 @@ This repository contains the lab report by Group 7, summarizing the results of t
 
 ## Assignment 1: Predictive Modeling for Airbnb Properties
 
-Hwere we develop a predictive model to estimate the "price per night" of Airbnb properties in Belgium. The notebooks present our process of EDA, feature engineering and model evaluation. 
+Here we develop a predictive model to estimate the "price per night" of Airbnb properties in Belgium. The notebooks present our process of EDA, feature engineering and model evaluation. 
 
 ## Assignment 2: Deep Learning for Image Classification
 
