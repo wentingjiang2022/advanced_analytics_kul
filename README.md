@@ -9,17 +9,20 @@ This repository contains the lab report by Group 7, summarizing the results of t
 - [Assignment 3: Real-Time Sentiment Analysis on Steam Reviews](https://github.com/wentingjiang2022/advanced_analytics_kul/tree/main/assignment3) 
 - [Assignment 4: Graph Analytics on Twitch Data](https://github.com/wentingjiang2022/advanced_analytics_kul/tree/main/assignment%204) 
 
-## 1️⃣ Assignment 1: Predictive Modeling for Airbnb Properties
+## 1️⃣ Predictive Modeling for Airbnb Properties
 
-Here we develop a predictive model to estimate the "price per night" of Airbnb properties in Belgium. The notebooks present our process of EDA, feature engineering and model evaluation. 
+The dataset is downloadable from [here](http://seppe.net/aa/assignment1/data.zip)
+The leaderboard that presents our ranking is to be found [here](http://seppe.net/aa/assignment1/)
 
-## 2️⃣ Assignment 2: Deep Learning for Image Classification
+In this assignment, we develop a predictive model to estimate the "price per night" of Airbnb properties in Belgium. The notebooks present our process including exploratory data analysis, feature transformation, feature engineering and model evalation.
 
-The dataset is downloadable [here](https://drive.google.com/drive/folders/13uqo4de3n0Of1X2Appt_G3WAUXqF3h4J?usp=sharing)
+## 2️⃣ Deep Learning for Image Classification
+
+The dataset is downloadable from [here](https://drive.google.com/drive/folders/13uqo4de3n0Of1X2Appt_G3WAUXqF3h4J?usp=sharing)
 
 The task focused on image classification using deep learning techniques: distinguishing between food and interior images in the Michelin Guide and predicting cuisine type based on food images. The trained model to classify food vs interior of a restaurant is saved in the same folder with the name `food_interior_classifier.h5`.
 
-## 3️⃣ Assignment 3: Real-Time Sentiment Analysis on Steam Reviews
+## 3️⃣ Real-Time Sentiment Analysis on Steam Reviews
 
 #### Installation Guide
 
@@ -46,7 +49,7 @@ Assignment 3 outlines the findings of the third assignment, which focused on rea
 
 `merge_export_csvfile.ipynb`: To combine the text files from subdirectories and construct a dataset in CSV format
 
-## 4️⃣ Assignment 4: Graph Analytics on Twitch Data
+## 4️⃣ Graph Analytics on Twitch Data
 
 Lastly, Assignment 4 presents the outcomes of the fourth assignment, which involved applying graph analytics techniques to Twitch data using Cypher. The chapter highlights the approach, analysis process, and key findings.
 
