@@ -43,7 +43,7 @@ conda activate your-environment-name
 ```
 chmod +x ./letsgo-mac.sh
 ```
-Assignment 3 outlines the findings of the third assignment, which focused on real-time sentiment analysis of reviews from the Steam website. The chapter covers the data collection process, sentiment analysis, and results.
+In this folder, we outline the findings of the third assignment, which focused on real-time sentiment analysis of reviews from the Steam website. The chapter covers the data collection process, sentiment analysis, and results.
 
 #### File structure
 - `spark_streaming_saving.ipynb`:  A simple Spark Streaming script that saves the reviews in order to build our historical dataset
