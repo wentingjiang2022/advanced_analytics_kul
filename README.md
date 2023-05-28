@@ -56,15 +56,15 @@ In this folder, we outline the findings of the third assignment, which focused o
 Lastly, in the assignment 4, we will utilize Twitch data to examine the disparities between DOTA and LoL in terms of followers, number of views, streamer descriptions and tags, which involved applying graph analytics and text mining techniques to Twitch data on a Memgraph database using Cypher and Python.
 
 #### File structure:
-- cypher_code.txt: cypher code that we use to visualize the graph data and extract the data
+- `cypher_code.txt`: cypher code that we use to visualize the graph data and extract the data
 - Python_code folder includes:
-  + dotaall.json: the data of streamers who play DOTA related to number of views, number of followers, etc. 
-  + dotaalltag.json: the data of streamers who play DOTA related to their tags
-  + dotadescription.json:  the data of streamers who play DOTA related to their descriptions
-  + lolall.json: the data of streamers who play LoL related to number of views, number of followers, etc. 
-  + lolalltag.json: the data of streamers who play LoL related to their tags
-  + lolalldescription.json:  the data of streamers who play LoL related to their descriptions
-  + Assignment4.ipynb: the code that we use to analyze and visualize data from these aboved json files
+  + `dotaall.json`: the data of streamers who play DOTA related to number of views, number of followers, etc. 
+  + `dotaalltag.json`: the data of streamers who play DOTA related to their tags
+  + `dotadescription.json`:  the data of streamers who play DOTA related to their descriptions
+  + `lolall.json`: the data of streamers who play LoL related to number of views, number of followers, etc. 
+  + `lolalltag.json`: the data of streamers who play LoL related to their tags
+  + `lolalldescription.json`:  the data of streamers who play LoL related to their descriptions
+  + `Assignment4.ipynb`: the code that we use to analyze and visualize data from these aboved json files
 
 
 
