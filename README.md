@@ -46,10 +46,10 @@ chmod +x ./letsgo-mac.sh
 Assignment 3 outlines the findings of the third assignment, which focused on real-time sentiment analysis of reviews from the Steam website. The chapter covers the data collection process, sentiment analysis, and results.
 
 #### File structure
-`spark_streaming_saving.ipynb`:  A simple Spark Streaming script that saves the reviews in order to build our historical dataset
-`merge_export_csvfile.ipynb`: To combine the text files from subdirectories and construct a dataset in CSV format
-`spark_streaming_model_construct_predicting_original_dataset.ipynb`: A notebook that demonstrates the construction and deployment of a Spark streaming model for predicting on an original dataset.
-`spark_streaming_model_construct_predicting_balanced_dataset.ipynb`: A notebook that demonstrates the construction and deployment of a Spark streaming model for predicting on an balanced dataset.
+- `spark_streaming_saving.ipynb`:  A simple Spark Streaming script that saves the reviews in order to build our historical dataset
+- `merge_export_csvfile.ipynb`: To combine the text files from subdirectories and construct a dataset in CSV format
+- `spark_streaming_model_construct_predicting_original_dataset.ipynb`: A notebook that demonstrates the construction and deployment of a Spark streaming model for predicting on an original dataset.
+- `spark_streaming_model_construct_predicting_balanced_dataset.ipynb`: A notebook that demonstrates the construction and deployment of a Spark streaming model for predicting on an balanced dataset.
 
 ## 4️⃣ Graph Analytics on Twitch Data
 
