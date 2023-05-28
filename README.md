@@ -21,7 +21,7 @@ The task focused on image classification using deep learning techniques: disting
 
 ## Assignment 3: Real-Time Sentiment Analysis on Steam Reviews
 
-### Installation Guide
+#### Installation Guide
 
 To set up on your local machine for this assignment, follow these steps:
 
@@ -41,6 +41,8 @@ conda activate your-environment-name
 chmod +x ./letsgo-mac.sh
 ```
 Assignment 3 outlines the findings of the third assignment, which focused on real-time sentiment analysis of reviews from the Steam website. The chapter covers the data collection process, sentiment analysis, and results.
+
+##### File structure
 
 `merge_export_csvfile.ipynb`: To combine the text files from subdirectories and construct a dataset in CSV format
 
