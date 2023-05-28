@@ -1,6 +1,6 @@
 # 💻 Advanced Analytics in a Big Data World - Group 7
 
-This repository contains the lab report by Group 7, summarizing the results of the four assignments for the course Advanced Analytics in a Big Data World. The assignments were completed using Python as the main programming language. The repository serves as a collaborative platform for all team members, and the code for all assignments, including preliminary, final, and test versions.
+This repository contains the code developed by Group 7 for the course Advanced Analytics in a Big Data World. The assignments were completed using Python as the primary programming language. The repository serves as a collaborative platform for all team members of Group 7, housing the code for all assignments, including preliminary, final, and test versions.
 
 ## Table of Contents
 
