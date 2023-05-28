@@ -1,6 +1,6 @@
-# Advanced Analytics in a Big Data World
+# Advanced Analytics in a Big Data World - Group 7
 
-This repository contains the lab report summarizing the results of the four assignments for the course Advanced Analytics in a Big Data World. The assignments were completed using Python as the main programming language. The repository serves as a collaborative platform for all team members, and the code for all assignments, including preliminary, final, and test versions.
+This repository contains the lab report by Group 7, summarizing the results of the four assignments for the course Advanced Analytics in a Big Data World. The assignments were completed using Python as the main programming language. The repository serves as a collaborative platform for all team members, and the code for all assignments, including preliminary, final, and test versions.
 
 ## Table of Contents
 
@@ -40,8 +40,9 @@ conda activate your-environment-name
 ```
 chmod +x ./letsgo-mac.sh
 ```
+Assignment 3 outlines the findings of the third assignment, which focused on real-time sentiment analysis of reviews from the Steam website. The chapter covers the data collection process, sentiment analysis, and results.
 
-Assignment 3 outlines the findings of the third assignment, which focused on real-time sentiment analysis of reviews from the Steam website. The chapter covers the data collection process, methodology, and results.
+`merge_export_csvfile.ipynb`: To combine the text files from subdirectories and construct a dataset in CSV format
 
 ## Assignment 4: Graph Analytics on Twitch Data
 
