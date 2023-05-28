@@ -4,7 +4,7 @@ This repository contains the code developed by Group 7 for the course Advanced A
 
 ## Table of Contents
 
-- [Assignment 1: Predictive Modeling for Airbnb Properties](https://github.com/wentingjiang2022/advanced_analytics_kul/tree/main/assignment1))
+- [Assignment 1: Predictive Modeling for Airbnb Properties](https://github.com/wentingjiang2022/advanced_analytics_kul/tree/main/assignment1)
 - [Assignment 2: Deep Learning for Image Classification](https://github.com/wentingjiang2022/advanced_analytics_kul/tree/main/assignment2) 
 - [Assignment 3: Real-Time Sentiment Analysis on Steam Reviews](https://github.com/wentingjiang2022/advanced_analytics_kul/tree/main/assignment3) 
 - [Assignment 4: Graph Analytics on Twitch Data](https://github.com/wentingjiang2022/advanced_analytics_kul/tree/main/assignment%204) 
