@@ -68,11 +68,6 @@ Lastly, in the assignment 4, we will utilize Twitch data to examine the disparit
 
 
 
-## 👉 License
-
-This repository is licensed under the [MIT License](LICENSE).
-
-
 
 
 
